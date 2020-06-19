@@ -1,0 +1,125 @@
+.@{css-prefix} {
+    .ivu-divider-horizontal {
+        margin: 20px 0;
+    }
+    .ivu-form {
+        position: relative;
+    }
+
+    &-hide {
+        display: none;
+    }
+
+
+    &-header {
+        height: 30px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &-tip {
+        margin-right: 40px;
+        line-height: 30px;
+    }
+
+    &-default-items-box {
+        width: 90%;
+        display: inline-block;
+    }
+    &-form-item {
+        max-width: 100%;
+        margin-right: 10px;
+
+        // Divider style
+        // .ivu-divider {
+        //     margin: 0 20px;
+        // }
+
+        .ivu-divider:before {
+            width: 0;
+        }
+
+        .ivu-divider .ivu-divider-inner-text,
+        .ivu-divider .ivu-divider-inner-text {
+            padding: 0;
+        }
+    }
+
+    &-default-items-box-no-right {
+        width: 100%;
+    }
+
+    &-extra-box-right {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        width: 9%;
+        height: 32px;
+        line-height: 32px;
+        display: inline-block;
+        text-align: right;
+    }
+
+    &-extra-right-content {
+        z-index: 100;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        padding: 10px;
+        width: auto;
+        height: auto;
+        border: solid 1px #e4e4e4;
+        border-radius: 10px;
+        background-color: #fff;
+        display: inline-block;
+        .ivu-checkbox-group-item {
+            width: 140px;
+            text-align: left;
+        }
+    }
+
+
+    &-extra-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 40px;
+        color: #2d8cf0;
+
+        &::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+
+    &-extra-left {
+        float: left;
+        height: 24px;
+        line-height: 24px;
+    }
+
+    &-extra-select-box {
+        margin: 0 auto;
+        width: 96%;
+    }
+
+    // hack for labelPosition: top
+    .ivu-form-label-top {
+        .ivu-form-item {
+            .ivu-form-item-label {
+                width: 100% !important;
+                float: left;
+                text-align: left;
+            }
+
+            .ivu-form-item-content {
+                margin-left: auto !important;
+            }
+        }
+    }
+}

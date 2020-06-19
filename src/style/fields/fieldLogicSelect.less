@@ -1,0 +1,31 @@
+@logicselect-prefix-cls: ~"@{css-prefix}-logicselect";
+
+
+.@{logicselect-prefix-cls} {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+
+    &-logic {
+        width: 90px;
+        margin-right: 10px;
+    }
+
+    &-logic-mid {
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+    }
+
+    // &-single-select {
+    //     width: 80px;
+    // }
+
+    &-double-select-box {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}
